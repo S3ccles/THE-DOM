@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 1.2rem;
+}
+#main {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+fieldset{
+border: none;
+}
+
+legend{
+text-align: center;
+padding: 1rem;
+font-weight: bold;
+}
+
+.tribute-list{
+width: 100%;
+margin: 0 auto;
+}
+
+.tribute-list li{
+display: flex;
+justify-content: space-between;
+gap: 2rem;
+padding: 0.5rem;
+}
+
+.tribute-list li .year {
+font-weight: bolder;
+}
+
+#img-div {
+margin: 0 auto;
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#image{
+height: auto;
+margin: 0 auto;
+display: block;
+max-width: 100%;
+}
+
+.description{
+width: 800px;
+text-align: left;
+}
+
+.divider {
+border-bottom: 0.5px solid #ccc;
+}
+
+footer {
+text-align: center;
+padding: 2rem;
+}
+
+#tribute-link{
+font-weight: bold;
+}
+
+.infoMaya {
+padding:10px 20px;
+background-color:purple;
+color: white;
+font-size: 24px;
+border-radius:10px ;
+}
+
+a{
+    color: white;
+}
+
+form{
+    height:200px;
+    background-color:grey;
+    padding: 10px 0px 10px;
+    border-radius:10px 10px ;
+   
+}
+input.checkbox{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+
+}
