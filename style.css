@@ -17,17 +17,25 @@ font-size: 1.2rem;
 header,
 #top-menu {
   position: relative;
-  height:10%;
+  height:40%;
   background-color: black;
 }
 
 h1, #title{
   padding-top:63px;
 }
-nav, #top-menu {
-  height: 40%;
-  background-color:blueviolet;
-  z-index: 20;
+
+#sub-menu {
+  position: relative;
+  top: 100%;
+  display: none;
+}
+
+#sub-menu.active {
+  display: block;
+}
+#sub-menu a:hover {
+  background-color: var(--top-menu-bg);
 }
 
 #sub-menu {
@@ -36,14 +44,12 @@ nav, #top-menu {
   transition: top 0.5s ease-out;
 }
 
-#sub-menu a:hover {
-  background-color: grey;
-}
 
 nav a.active {
   background-color:grey;
   color: black;
 }
+
 
 nav a {
   line-height: 10rem;
@@ -57,7 +63,7 @@ nav a {
 #main {
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 gap: 2rem;
 }
@@ -134,8 +140,9 @@ border-radius:10px ;
 a{
     color: white;
 }
+
 a :hover button{
-    background-color: yellow;
+    background-color: white;
 }
 
 form{

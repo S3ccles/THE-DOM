@@ -101,35 +101,3 @@ for (const link of menuLinks) {
 
   topMenuEl.appendChild(anchorElement);
 }
-
-
-// Get references to the form and submit button
-const form = document.querySelector('form');
-const submitButton = document.querySelector('submitBtn');
-
-// Function to check if exactly one quote is selected
-const validateForm = () => {
-  let selectedQuotes = 0;
-  const quoteCheckboxes = document.querySelectorAll('input[type="checkbox"]');
-
-  quoteCheckboxes.forEach(checkbox => {
-    if (checkbox.checked) {
-      selectedQuotes++;
-    }
-  });
-
-  return selectedQuotes === 1;
-};
-
-// Add event listener to the submit button
-submitButton.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent default form submission
-
-  if (validateForm()) {
-    // Submit the form if validation passes
-    form.submit();
-  } else {
-    // Display an error message
-     alert("Please select one quote.");
-  }
-});
