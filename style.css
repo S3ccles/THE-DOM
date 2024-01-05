@@ -7,10 +7,53 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 1.2rem;
+
 }
+
+header,
+#top-menu {
+  position: relative;
+  height:10%;
+  background-color: black;
+}
+
+h1, #title{
+  padding-top:63px;
+}
+nav, #top-menu {
+  height: 40%;
+  background-color:blueviolet;
+  z-index: 20;
+}
+
+#sub-menu {
+  width: 100%;
+  z-index: 10;
+  transition: top 0.5s ease-out;
+}
+
+#sub-menu a:hover {
+  background-color: grey;
+}
+
+nav a.active {
+  background-color:grey;
+  color: black;
+}
+
+nav a {
+  line-height: 10rem;
+  padding: 2px 6rem;
+  padding-left:150px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
 #main {
 display: flex;
 flex-direction: column;
@@ -18,9 +61,12 @@ justify-content: center;
 align-items: center;
 gap: 2rem;
 }
+
 fieldset{
-border: none;
+border: dotted;
+background-color: linear-gradient(to left top gray, purple);
 }
+
 
 legend{
 text-align: center;
@@ -46,7 +92,7 @@ font-weight: bolder;
 
 #img-div {
 margin: 0 auto;
-width: 100vw;
+width: 50vw;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -55,7 +101,7 @@ align-items: center;
 #image{
 height: auto;
 margin: 0 auto;
-display: block;
+display: flex;
 max-width: 100%;
 }
 
@@ -88,15 +134,18 @@ border-radius:10px ;
 a{
     color: white;
 }
+a :hover button{
+    background-color: yellow;
+}
 
 form{
     height:200px;
-    background-color:grey;
+    background-color:blueviolet;
     padding: 10px 0px 10px;
     border-radius:10px 10px ;
    
 }
-input.checkbox{
+input #checkbox{
     width:100px;
     height:100px;
     background-color: aquamarine;

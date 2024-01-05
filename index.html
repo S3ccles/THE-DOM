@@ -6,8 +6,12 @@
 <meta name="description" content="freeCodeCamp Tribute Page">
 <title>Tribute Page for Dr. Maya Angelou</title>
 <link rel="stylesheet" href="./style.css">
+<script defer src="./maya.js"></script>
 </head>
-
+ <header>
+      <nav id="top-menu"></nav>
+      <nav id="sub-menu"></nav>
+    </header>
 <body>
 <main id= "main">
 <h1 id= "title">Dr. Maya Angelou</h1>
@@ -103,27 +107,30 @@
 </div>
 </fieldset>
 <form> 
-<label>What is your favirote quote by Dr. Maya Angelou? Choose one.</label>
+What is your favirote quote by Dr. Maya Angelou? Choose one.
 <br>
 <br>
-<fieldset>
-<div id="checkbox">
+<aside><label>
 <input type= "checkbox" id= "quote1"/>
  "Do the best you can until you know better. Then when you know better, do better."
 <br>
-<input type= "checkbox" id= "quote2" />“Don’t bring the negative to my door.”
+<input type= "checkbox" id= "quote2" />
+"Don’t bring the negative to my door."
  <br>
-<input type= "checkbox" id= "quote3" />“The first time someone shows you who they are, believe them.”
+<input type= "checkbox" id= "quote3" />
+"The first time someone shows you who they are, believe them.""
 <br>
-<input type= "checkbox" id="quote4" />“People will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
+<input type= "checkbox" id="quote4" />
+"People will forget what you said, people will forget what you did, but people will never forget how you made them feel."
 <br>
-<input type= "checkbox" id="quote5  " />"Words mean more than what is set down on paper. It takes the human voice to infuse them with deeper meaning."
-</div>
-<button class="Submit">Submit</button>
-</fieldset>
+<input type= "checkbox" id="quote5  " />
+"Words mean more than what is set down on paper. It takes the human voice to infuse them with deeper meaning."
+<br>
+<button onclick="submitBtn">Submit</button>
 </form>
+</aside
 
-<footer class="bold"><button class="infoMaya">Learn more about <a href="https://www.twinkl.com/teaching-wiki/maya-angelou" id="tribute-link" target="_blank">Dr. Maya Angelou.</a></button></footer>
+<footer class= "bold"><button class="infoMaya">Learn more about <a href="https://www.twinkl.com/teaching-wiki/maya-angelou" id="tribute-link" target="_blank">Dr. Maya Angelou.</a></button></footer>
 </main>
 
 
